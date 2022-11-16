@@ -1,0 +1,33 @@
+<center>
+<table border=1>
+<tr>
+<th>name</th>
+<th>domaine</th>
+<th>modiffier</th>
+<th>Suprimer</th>
+<th>ajouter computer</th>
+
+</tr>
+<tr{% for d in deparetemts %}>
+<td>{{d.name}}</td>
+<td>{{d.domain}}</td>
+
+<td><a href="{{path('M',{'id':d.id})}}">Modiffier</a></td>
+<td><a href="{{path('S',{'id':d.id})}}">Suprimer</a></td>
+<td><a href="{{path('ajouC',{'id':d.id})}}">ajouter computer</a></td>
+
+
+</tr>
+{% endfor %}
+
+{#<a href="{{path('ajoudep')}}">ajouter deparetemt</a>#}
+
+<form action="{{path('ajoudep')}}">
+<button>ajouter deparetemt</button>
+</form>
+
+<a href="{{path('ajoucomp2')}}">ajouter computer 2</a>
+
+</table>
+
+</center>

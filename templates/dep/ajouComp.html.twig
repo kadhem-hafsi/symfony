@@ -1,0 +1,13 @@
+{# ajouter un computer au domaine dont le nom est {{id.name}}  {{form(fCom)}}#}
+{{form_start(fCom)}}
+{{form_label(fCom.model,"le modele")}}
+{{form_widget(fCom.model)}}<br>
+{#
+{{form_label(fCom.idDepartement,"le departement")}}
+{{form_widget(fCom.idDepartement)}}<br>
+#}
+{{form_label(fCom.macAdress,"mon macAdress")}}
+{{form_widget(fCom.macAdress)}}
+{{form_errors(fCom.macAdress)}}
+
+{{form_end(fCom)}}

@@ -1,0 +1,17 @@
+<table border=1>
+<tr>
+
+<th>model</th>
+<th>system</th>
+<th>deparetement</th>
+</tr>
+
+<tr{% for c in computer %}>
+
+<td>{{c.model}}</td>
+<td>{{c.system}}</td>
+<td>{{c.idDepartement}}</td>
+
+</tr>
+{% endfor %}
+</table>
